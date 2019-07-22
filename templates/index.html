@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>profile</title>
+<style>
+	table{
+		background-color:grey;
+		border : 7px groove rgba(123,123,123,0.5);
+		}
+	h2{
+		text-align:center;
+		text-decoration:underline;
+	}
+	h1{
+		text-align:center;
+		border:5px groove rgba(67,87,97,0.5);
+		background-color:rgba(67,87,97,0.5);
+	}
+	body{
+		background-color:#E5E5E5;
+		}
+</style>
+</head>
+<body>
+	<h1>Diabetics Prediction</h1>
+	<h2>Enter Patient Details</h2>
+<form action = "http://localhost:5000/submit" method = "POST">
+<center><table border="1" cellpadding="15" cellspacing="0" id="mytable">
+<tr>
+<td>pregnancies</td>
+<td><input type="text"  name="pregnancies" required></td></tr>
+<tr>
+<td>Glucose</td>
+<td><input type="text" name = "Glucose"  required></td></tr>
+<tr>
+<td>Blood Pressure</td>
+<td><input type="text" name = "BloodPressure" required></td></tr>
+<tr>
+<td>Skin Thickness</td>
+<td><input type="text" name = "Thickness" required></td></tr>
+<tr>
+<td>Insulin</td>
+<td><input type="text" name = "Insulin"  required></td></tr>
+<tr>
+<td>BMI</td>
+<td><input type="text" name = "BMI" required></td></tr>
+<tr>
+<tr>
+<td>Diabetes</td>
+<td><input type="text" name = "Diabetes"  required></td></tr>
+<tr>
+<td>Age</td>
+<td><input type="text" name = "Age"  required></td></tr>
+<td colspan="2"><center><input type = "submit" value = "submit"></center></td></tr>
+</center>
+</table>
+</form>
+</body>
+</html>
